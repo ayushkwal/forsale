@@ -27,7 +27,7 @@ app.use(adRoutes)
 app.use(conversationRoutes)
 
 mongoose.set("strictQuery", false);
-mongoose.connect(`mongodb+srv://ak:h0EVlFXGYUi3rsVS@cluster0.9eeuwie.mongodb.net/?retryWrites=true&w=majority`).then(()=>{
+mongoose.connect(`mongodb+srv://<MONGODB_CREDENTIALS>/?retryWrites=true&w=majority`).then(()=>{
     console.log("Successfully connected to database");
 }).catch((err)=>{
     console.log("Error in Connecting to Database");
